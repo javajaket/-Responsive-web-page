@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>반응형 웹페이지</title>
 </head>
 <body>
@@ -72,14 +72,68 @@
       </ul>
     </nav>
     <main class="main">
-      <section class="book">책</section>
-      <section class="news">뉴스</section>
-      <section class="board">게시판</section>
-      <section class="twitter">트위터</section>
-      <section class="favorite-site">사이트</section>
+      <section class="book">
+        <h2 class="book-heading main-section-heading">
+          추천 서적
+          <span class="en-heading">Recommend Book</span>
+        </h2>
+      </section>
+      <section class="news">
+        <h2 class="news-heading main-section-heading">
+          새소식
+          <span class="en-heading">WebCafe News</span>
+        </h2>
+        <figure class="news-container">
+          <video src="" class="news-video" poster="media/poster.jpg" controls>
+            <source src="media/stories.mp4" type="video/mp4">
+            <track src="media/stories-en.vtt" kind="captions" srclang="en" label="English captions">
+          </video>
+        </figure>
+        <p class="news-summary">
+          구글플레이는 다양한 분야에서 활약하고 있는 국내 개발사들을 모시고 직접 이야기를 나눠보는 '구글플레이 개발자와의 대화' 행사를 정기적으로 
+          개최할 예정입니다. 오늘 3월 29일(수) 구글 캠퍼스 서울에서 열린 첫 번째 '구글플레이 개발자와의 대화'는 '해외서 빵터진 한국 앱'을
+          주제로 진행됬는데요, 국내 앱 시장은 물론 글로벌 시장에서도 주목 받으며 들로벌 진출의 본보기가 되고 있는 개발사 세 곳과 함께 했습니다.
+        </p>
+      </section>
+      <section class="board">
+        <h2 class="board-heading main-section-heading">
+          게시판
+          <span class="en-heading">WebCafe Board</span>
+        </h2>
+      </section>
+      <section class="twitter">
+        <h2 class="twitter main-section-heading">
+          트위터
+          <span class="en-heading">WebCafe Twitter</span>
+        </h2>
+      </section>
+      <section class="favorite-site">
+        <h2 class="favorite-site-heading main-section-heading">
+          인기 사이트
+          <span class="en-heading">Favorite Site</span>
+        </h2>
+      </section>
     </main>
-    <article class="slogan">슬로건</article>
-    <footer class="footer">푸터</footer>
+    <article class="slogan">
+        <h2 class="slogan-heading" title="웹카페에서 웹표준을">슬로건</h2>
+        <p class="slogan-content">
+          <q cite="http://w3.org/WAI">The power of the Web is in its universality, Access by everyone regardless of disability is an essential aspect.</q>
+          Tim Berners - Lee , W3C Director and inventor of the World Wide Web
+        </p>
+        <footer class="readable-hidden">
+          출처 : W3C, http://w3.org/WAI/
+        </footer>
+    </article>
+    <footer class="footer">
+      <address class="address">
+        <span>서울시 마포구 상수동 123-12 한주빌딩 5층</span>
+        <span>전화: <a href="tel:022345678">02-234-5678</a></span>
+        <span>이메일: <a href="#">kt5161497@gmail.com</a></span>
+      </address>
+      <small class="copyright">
+        Copyright since &copy; 2010 by Web Cafe CORPORATION ALL RIGHTS RESERVED.
+      </small>
+    </footer>
   </div>
 </body>
 </html>
